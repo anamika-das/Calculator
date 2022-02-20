@@ -1,11 +1,67 @@
 body {
-    background-color: blue;
+    background-color: #fff6bf;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .container {
-    background-color: brown;
-    margin-left: 35%;
-    margin-right: 35%;
-    height: 700px;
-    width:auto;
+    background-color: #161616;
+    margin-left: 33%;
+    margin-right: 33%;
+    height: 500px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #000;
+}
+
+.screen {
+    height: 100px;
+    width: 300px;
+    border-radius: 12px;
+    background-color: #2b292a;
+    border: 1px solid #000;
+}
+
+.row {
+    width: 300px;
+    margin-top: 10px;
+    display:flex;
+}
+.rowdown {
+    width: 225px;
+    margin-top: 10px;
+    display:flex;
+}
+
+.btn_equal {
+    background-color: #343434;
+    width: 50px;
+    height: 83px;
+    position: relative;
+    float: right;
+    margin-right: 3px;
+    margin-top: 15px;
+    text-align: center;
+    padding: 8px;
+    font-size: 24px;
+    color: #ffffff;
+    border-radius: 10px;
+    padding-top: 48px;
+    border: 1px solid #000;
+}
+
+
+.btn {
+    background-color: #1a434e;
+    width: 50px;
+    height: 24px;
+    margin: 5px;
+    text-align: center;
+    padding: 18px;
+    font-size: 24px;
+    border-radius: 10px;
+    color: #ffffff;
+    border: 1px solid #000;
 }
