@@ -53,6 +53,7 @@ body {
     border-radius: 10px;
     padding-top: 48px;
     border: 1px solid #000;
+    cursor: pointer;
 }
 
 
@@ -67,4 +68,5 @@ body {
     border-radius: 10px;
     color: #ffffff;
     border: 1px solid #000;
+    cursor: pointer;
 }
