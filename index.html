@@ -52,12 +52,17 @@
         
         var data = "";
         function buttonClick() {
-            switch(this.innerHTML) {
-                case "AC":
-                    data = "";
-                    break;
-                default:
-                    data = data + this.innerHTML;
+            if(this.firstElementChild){
+                // console.log(this.firstElementChild.nodeName);
+                data = data.slice(0, -1);
+            } else {
+                switch(this.innerHTML) {
+                    case "AC":
+                        data = "";
+                        break;
+                    default:
+                        data = data + this.innerHTML;
+                }
             }
             document.getElementById("display").innerHTML = data;
         }   
