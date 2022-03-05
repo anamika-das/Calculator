@@ -33,7 +33,7 @@
                 <div class = "btn">6</div>
                 <div class = "btn">+</div>
             </div>
-            <div class = "btn_equal">=</div>
+            <div id = "equal" class = "btn_equal">=</div>
             <div class = "rowdown">
                 <div class = "btn">1</div>
                 <div class = "btn">2</div>
@@ -51,6 +51,11 @@
         })
         
         var data = "";
+        document.getElementById("equal").addEventListener("click", function() {
+            data = "Ans";
+            document.getElementById("display").innerHTML = data;
+        });
+
         function buttonClick() {
             if(this.firstElementChild){
                 // console.log(this.firstElementChild.nodeName);
