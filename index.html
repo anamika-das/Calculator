@@ -9,7 +9,10 @@
     </head>
     <body>
         <div class = "container">
-            <div class = "screen" id = "display"></div>
+            <div class = "screen">
+                <div id = "history" class = "screen_top"></div>
+                <div id = "display" class = "screen_down"></div>
+            </div>
             <div class = "row">
                 <div class = "btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace" viewBox="0 0 16 16">
@@ -52,7 +55,8 @@
         
         var data = "";
         document.getElementById("equal").addEventListener("click", function() {
-            data = "Ans";
+            document.getElementById("history").innerHTML = data;    
+            data = eval(data);
             document.getElementById("display").innerHTML = data;
         });
 
@@ -63,6 +67,7 @@
             } else {
                 switch(this.innerHTML) {
                     case "AC":
+                        document.getElementById("history").innerHTML = "";    
                         data = "";
                         break;
                     default:

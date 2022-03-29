@@ -27,6 +27,17 @@ body {
     padding: 10px;
 }
 
+.screen_top {
+    width: 100%;
+    height: 50px;
+}
+
+.screen_down {
+    width: 100%;
+    height: 50px;
+    font-size: 48px;
+}
+
 .row {
     width: 300px;
     margin-top: 10px;
